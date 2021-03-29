@@ -67,15 +67,11 @@ void EnterData(int array1[][n], int array2[][p]){
 	}
 }
 void Mult(int final[][p],int array1[][n],int array2[][p]){
-	for(int i=0;i<m;++i){
-		for (int j=0;j<p;++j){
-			final[i][j]=0;
-		}
-	}
     for(int i=0;i<m; ++i)
 	{
 		for(int j=0;j<p; ++j)
 		{
+			final[i][j]=0;
 			for(int k=0; k<n; ++k)
 			{
 				final[i][j]=final[i][j]+array1[i][k]*array2[k][j];
